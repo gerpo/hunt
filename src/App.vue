@@ -9,7 +9,7 @@
       <h2 class="leading-relaxed text-xl">Fehler</h2>
       <p>Leider kennen wir diesen Code nicht. Überprüfe nochmal ob du alles richtig eingegeben hast.</p>
     </div>
-    <div id="clue-box" v-if="show_clue" class="bg-red-50 mt-5 w-full max-w-screen-md rounded shadow-mx border-2 border-gray-200 px-10 py-5">
+    <div id="clue-box" v-if="show_clue" class="bg-green-50 mt-5 w-full max-w-screen-md rounded shadow-mx border-2 border-gray-200 px-10 py-5">
       <h2>Glückwunsch</h2>
       <p>Deine Bestellung ist Abholbereit.</p>
     </div>
