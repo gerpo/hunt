@@ -16,5 +16,10 @@
     "postcss": "^8.2.4",
     "tailwindcss": "^2.0.2",
     "vite": "^2.0.0-beta.50"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "htmlWhitespaceSensitivity": "ignore",
+    "singleQuote": true
   }
 }
