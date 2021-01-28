@@ -1,17 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/SV_Viktoria_Goch_Logo.svg" class="mx-auto max-h-40" />
-  <div class="flex flex-col items-center content justify-items-center h-100">
+  <div class="flex flex-col items-center mx-2 content justify-items-center h-100">
 
     <div id="code-box" 
-        class="flex w-full max-w-screen-md px-10 py-5 border-2 border-gray-400 rounded shadow-md">
+        class="flex flex-wrap w-full max-w-screen-md px-10 py-5 border-2 border-gray-400 rounded shadow-md sm:flex-nowrap">
 
             <input type="text" 
             v-model="code" 
             @keydown.enter="checkCode"
-            class="flex-grow px-5 mr-5 leading-10 shadow-md" >
+            class="flex-grow px-5 leading-10 shadow-md sm:mr-5" >
 
             <button @click="checkCode" 
-                class="px-5 leading-10 bg-gray-100 rounded shadow-sm hover:bg-green-200 hover:shadow-inner">
+                class="w-full px-5 mt-2 font-medium leading-10 bg-gray-100 border-2 border-gray-300 rounded shadow-sm sm:mt-0 sm:w-auto hover:bg-green-100 hover:bg-opacity-20 hover:border-green-500 hover:shadow-inner">
                     Prüfen
             </button>
             
