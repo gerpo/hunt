@@ -53,7 +53,6 @@ const show_clue = ref(false);
 let disabled = computed(() => !!!code.value);
 
 const checkCode = () => {
-    alert(code.value.length);
     if (!code.value) {
         return;
     }
