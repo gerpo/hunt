@@ -1,8 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo-schotten.png" class="mx-auto my-3 bg-white max-h-40" />
-  <div class="flex flex-col items-center h-full p-5 mx-2 bg-gray-100 content justify-items-center">
-    <div class="w-full mb-5 text-left">
-        <h1 class="mb-3 font-serif text-5xl">Reparaturstatus</h1>
+  <img alt="Vue logo" src="./assets/logo-schotten.png" class="flex-shrink-0 mx-auto my-3 bg-white max-h-40" />
+  <div class="flex flex-col items-center flex-grow p-5 mx-2 bg-gray-100 content justify-items-center">
+    <div class="w-full max-w-screen-md mb-5 text-left">
+        <h1 class="mb-3 font-serif text-5xl ">Reparaturstatus</h1>
         <p>Überprüfen Sie hier den Status Ihrer Reparatur bequem mit Ihrer Auftragsnummer.</p>
     </div>
     <div id="code-box" 
@@ -33,8 +33,26 @@
         v-if="show_clue" 
         class="w-full max-w-screen-md px-10 py-5 mt-5 border-2 border-gray-200 rounded bg-green-50 shadow-mx">
 
-            <h2>Glückwunsch</h2>
-            <p>Deine Bestellung ist Abholbereit.</p>
+            <h2 class="mb-2 text-xl">Reparaturstatus: <span>Es tut uns leid, Ihr Auftrag ist noch in Arbeit.</span></h2>
+            <p class="mb-2">Hier die Daten zum Auftrag: <span class="font-semibold">M55i9H1C07ao3J2</span></p>  
+            <p class="">Kundendaten:</p> 
+            <address class="mb-2 text-justify">
+                Joachim Otto<br/>
+                Appeldornstr. 24<br/>
+                47574 Goch<br/>
+                Tel: +49175-2334187
+            </address>
+            <p class="">
+                Bestelldatum: 03.01.2022<br/>
+                Ihr Auftrag: Reparatur Insignien Prinz<br/>
+                Gewünschter Termin: 06.01.2022
+            </p>
+            <p class="mb-2">
+                Vorraussichtlicher Termin der Fertigstellung: <span class="font-semibold">24.01.2022</span>
+            </p>
+            <p class="whitespace-pre-line">
+                Bei Fragen können Sie sich gerne an uns wenden.
+            </p>
             
     </div>
     
